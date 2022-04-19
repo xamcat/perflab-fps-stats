@@ -1,13 +1,15 @@
-# Performance Fps Stats
+# Performance FPS Stats
 
 Simple FPS Stats service with an ability to check a UI thread responsiveness
 
-## Usage
+## Usage 
+
+Maui example
 
 - Create and start the FPS Service
   ```MAUI
-  _fpsService = new FpsStatsService(action => Dispatcher.DispatchAsync(action));
-  _fpsService.Start();
+  _fpsService = new FpsStatsService();
+  _fpsService.Start(action => Dispatcher.DispatchAsync(action));
   ```
 - Read FPS stats periodically
   ```MAUI
