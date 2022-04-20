@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <Shell
-    x:Class="Performance.FpsStats.App.AppShell"
+    x:Class="PerfLab.FpsStats.App.AppShell"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:local="clr-namespace:Performance.FpsStats.App"
+    xmlns:local="clr-namespace:PerfLab.FpsStats.App"
     Shell.FlyoutBehavior="Disabled">
 
     <ShellContent

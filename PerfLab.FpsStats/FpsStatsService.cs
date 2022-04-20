@@ -1,6 +1,6 @@
 ﻿using System.Diagnostics;
 
-namespace Pefrormance.FpsStats
+namespace PerfLab.FpsStats
 {
     public class FpsStatsService
     {

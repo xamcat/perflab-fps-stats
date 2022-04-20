@@ -1,7 +1,7 @@
 ﻿using Android.App;
 using Android.Runtime;
 
-namespace Performance.FpsStats.App
+namespace PerfLab.FpsStats.App
 {
     [Application]
     public class MainApplication : MauiApplication

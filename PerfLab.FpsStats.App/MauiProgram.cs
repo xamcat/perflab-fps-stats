@@ -1,4 +1,4 @@
-﻿namespace Performance.FpsStats.App
+﻿namespace PerfLab.FpsStats.App
 {
     public static class MauiProgram
     {

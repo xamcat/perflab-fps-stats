@@ -1,7 +1,7 @@
 ﻿using Microsoft.Maui.Dispatching;
-using Pefrormance.FpsStats;
+using PerfLab.FpsStats;
 
-namespace Performance.FpsStats.App
+namespace PerfLab.FpsStats.App
 {
     public partial class MainPage : ContentPage
     {

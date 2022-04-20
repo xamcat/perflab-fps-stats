@@ -1,7 +1,7 @@
 ﻿using ObjCRuntime;
 using UIKit;
 
-namespace Performance.FpsStats.App
+namespace PerfLab.FpsStats.App
 {
     public class Program
     {

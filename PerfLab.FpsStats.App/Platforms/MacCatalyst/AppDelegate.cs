@@ -1,6 +1,6 @@
 ﻿using Foundation;
 
-namespace Performance.FpsStats.App
+namespace PerfLab.FpsStats.App
 {
     [Register("AppDelegate")]
     public class AppDelegate : MauiUIApplicationDelegate
