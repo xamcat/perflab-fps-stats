@@ -13,7 +13,7 @@
 		<ApplicationTitle>PerfLab.FpsStats.App</ApplicationTitle>
 
 		<!-- App Identifier -->
-		<ApplicationId>com.companyname.performance.fpsstats.app</ApplicationId>
+		<ApplicationId>com.companyname.perflab.fpsstats.app</ApplicationId>
 		<ApplicationId Condition="$(TargetFramework.Contains('-windows'))">579E8C2E-3F90-49EB-9980-6F4B80DEDC8E</ApplicationId>
 
 		<!-- Versions -->

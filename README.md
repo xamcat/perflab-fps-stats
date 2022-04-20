@@ -1,4 +1,4 @@
-# Performance FPS Stats
+# PerfLab FPS Stats
 
 Simple FPS Stats service with an ability to check a UI thread responsiveness
 
@@ -8,6 +8,8 @@ Maui example
 
 - Create and start the FPS Service
   ```MAUI
+  using PerfLab.FpsStats; 
+  ...
   _fpsService = new FpsStatsService();
   _fpsService.Start(action => Dispatcher.DispatchAsync(action));
   ```
