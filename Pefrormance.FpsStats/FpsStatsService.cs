@@ -13,17 +13,16 @@ namespace Pefrormance.FpsStats
         public double Latency { get; private set; }
         public string Stats { get; private set; } = String.Empty;
 
+        public event EventHandler<EventArgs>? StatsUpdated;
+
         public FpsStatsService()
         {
-           
         }
 
         private async Task StartUpdateTimestamp()
         {
             if (_isFpsUpdating)
                 return;
-
-            await Task.Delay(3000);
 
             _isFpsUpdating = true;
             _fpsDataPoints.Clear();
@@ -68,6 +67,7 @@ namespace Pefrormance.FpsStats
             Fps = avgFps;
             Stats = $"{DateTime.Now:T} | LAT {avgLatency:0.000} s | FPS {avgFps:000}";
             _fpsDataPoints.Clear();
+            StatsUpdated?.Invoke(this, EventArgs.Empty);
         }
 
         public Task Start(Action<Action> invokeOnThread)

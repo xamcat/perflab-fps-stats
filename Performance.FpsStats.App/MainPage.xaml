@@ -4,7 +4,7 @@
              x:Class="Performance.FpsStats.App.MainPage">
 
     <ScrollView>
-        <VerticalStackLayout Spacing="25" Padding="30">
+        <VerticalStackLayout x:Name="Container" Spacing="25" Padding="30">
 
             <Label 
                 Text="Hello, World!"
@@ -31,6 +31,13 @@
                 FontAttributes="Bold"
                 SemanticProperties.Hint="Counts the number of times you click"
                 Clicked="OnCounterClicked"
+                HorizontalOptions="Center" />
+
+            <Button 
+                Text="Heavy UI Task"
+                FontAttributes="Bold"
+                SemanticProperties.Hint="Starts heavy UI Task"
+                Clicked="OnHeavyUITaskClicked"
                 HorizontalOptions="Center" />
 
             <Image

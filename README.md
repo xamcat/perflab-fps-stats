@@ -15,7 +15,17 @@ Maui example
   ```MAUI
   CounterLabel.Text = _fpsService.Stats;
   ```
-- Stop service when not needed
+- Subscribe for updates (optional)
+  ```
+  _fpsService.StatsUpdated += _fpsService_StatsUpdated;
+
+  private void _fpsService_StatsUpdated(object sender, EventArgs e)
+  {
+      CounterLabel.Text = _fpsService.Stats;
+  }
+  ```
+- Stop service when not needed and unsubscribe from updates 
   ```MAUI
+  _fpsService.StatsUpdated -= _fpsService_StatsUpdated;
   _fpsService.Stop();
   ```
