@@ -1,6 +1,6 @@
 # PerfLab FPS Stats
 
-A simple UI thread performance stats service for your dotnet app which approximately measures UI thread latency and FPS (frames per second) the is handling in real-time.
+A simple UI thread performance stats service for your dotnet app which approximately measures UI thread latency and FPS (frames per second) the UI thread is handling in real-time.
 
 ![Demo](PerfLab.FpsStats.Demo.gif)
 
