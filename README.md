@@ -1,10 +1,12 @@
 # PerfLab FPS Stats
 
-Simple FPS Stats service with an ability to check a UI thread responsiveness
+A simple UI thread performance stats service for your dotnet app which approximately measures UI thread latency and FPS (frames per second) the is handling in real-time.
+
+![Demo](PerfLab.FpsStats.Demo.gif)
 
 ## Usage 
 
-Maui example
+Dotnet MAUI example
 
 - Create and start the FPS Service
   ```MAUI
